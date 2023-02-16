@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-
 /**
- * main - A program that prints a line with puts funcation
+ * main - Entry point
  *
- *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
