@@ -3,6 +3,8 @@
 
 /**
  * main - A program that prints a line with puts funcation
+ *
+ *
  * Return: 0 (Success)
  */
 int main(void)
