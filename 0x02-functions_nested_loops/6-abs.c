@@ -1,6 +1,6 @@
 /**
  * _abs - computes the absolute value of an integer
- * @c: the interger to be computed
+ * @t: the interger to be computed
  * Return: Absolute value of the number
  */
 int _abs(int t)
