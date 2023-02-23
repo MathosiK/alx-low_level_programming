@@ -2,34 +2,42 @@
 
 /**
  * times_table - print the 9 times table
- *
- * Return: nothing on success
+ * rone = row, cone = column, d = digits of current result
+ * Return:times table
+ *add extra space past ingle digit
  */
 void times_table(void)
 {
-	int num, mult, prod;
+	int r, c, d;
 
-	for (num = 0; num <= 9; num++)
+	for (r = 0; r <= 9; r++)
 	{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
 
-		for (mult = 1; mult <= 9; mult++)
+		for (c = 1; c <= 9; c++)
 		{
-			_putchar(',');
-			_putchar(' ');
-
-			prod = num * mult;
-
-			if (prod <= 9)
-				_putchar(' ');
+			d = (r * c);
+			if ((d / 10) > 0)
+			{
+				_putchar((d / 10) + '0');
+			}
 			else
-				_putchar((prod / 10) + '0');
-
-			_putchar((prod % 10) + '0');
+			{
+				_putchar(' ');
+			}
+			_putchar((d % 10) + 10);
+			if (c < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
+		_putchar('\n');
 	}
 }
+
+
 
 
