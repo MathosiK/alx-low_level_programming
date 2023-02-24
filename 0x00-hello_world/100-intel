@@ -1,0 +1,10 @@
+#!bin/bash
+gcc -s -masm=intel $CFILE
+8-#include <stdio.h>
+
+/**
+*main - Entry point
+*
+*return: Always 0 (success)
+*/
+
